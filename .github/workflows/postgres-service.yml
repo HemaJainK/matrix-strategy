@@ -28,7 +28,7 @@ jobs:
         run: |
           until nc -z -v -w30 localhost 5432; do
             echo "Waiting for PostgreSQL..."
-            sleep 100
+            sleep 5
           done
           echo "PostgreSQL is ready!"
 
